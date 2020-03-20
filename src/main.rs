@@ -130,7 +130,6 @@ impl Board {
 
   // remove the value as a possibility from the cell at the given coordinates 
   // if the cell becomes solved, add it to the queue of solved cells 
-  // prints the updated board after updating its state
   fn reduce_cell_possibilities(&mut self, x: u32, y: u32, v: u32) {
     let cell: &mut Cell = &mut self.cells[x as usize][y as usize];
 
